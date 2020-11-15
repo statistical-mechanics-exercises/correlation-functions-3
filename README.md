@@ -7,7 +7,7 @@ In this next exercise, we are going to calculate the covariance between pairs of
 
 Your function should then return the covariance between two spins separated by `r` sites, which is given by:
 
-![](https://render.githubusercontent.com/render/math?math=\langle(s_i\langle\s\rangle)(s_{i%2Br}-\langle\s\rangle)\rangle=\frac{1}{N}\sum_{i=1}^N(s_i\langle\s\rangle)(s_{i%2Br}-\langle\s\rangle))
+![](https://render.githubusercontent.com/render/math?math=\langle(s_i\langle\s\rangle)(s_{i%2Br}-\langle\s\rangle)\rangle=\frac{1}{N}\sum_{i=1}^N(s_i-\langle\s\rangle)(s_{i%2Br}-\langle\s\rangle))
 
 Once again the summation here runs over the ![](https://render.githubusercontent.com/render/math?math=N) spin in the system and the ![](https://render.githubusercontent.com/render/math?math=s_i) values are the spin variables.  Notice, however, that, unlike in the previous exercise, when we expand out the brackets on the right-hand side we do not get the product of the ith spin variable with itself.  We instead have a product of two different spin variables; namely, the ith and (i+r)th spins.  If ![](https://render.githubusercontent.com/render/math?math=\langle\s\rangle=0) the right-hand side of this expression is thus equal to ![](https://render.githubusercontent.com/render/math?math=1/N) times the sum of the product of every pair of spins in the system that are separated by r sites.
 
